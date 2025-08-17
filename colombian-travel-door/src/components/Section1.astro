@@ -1,0 +1,44 @@
+---
+import duster from '../assets/duster.jpg';
+import logo from '../assets/duster.jpg';
+--- 
+<section class="flex flex-col items-center justify-center px-4 py-8 md:py-16">
+  <!-- Título con logo -->
+  <div class="flex items-center justify-center space-x-4 mb-8">
+    <h1 class="text-2xl md:text-4xl font-bold">COLOMBIAN</h1>
+    <img src={logo.src} alt="Logo" class="w-12 h-12 md:w-16 md:h-16" />
+    <h1 class="text-2xl md:text-4xl font-bold">TRAVEL DOOR</h1>
+  </div>
+
+  <!-- Sección principal -->
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-6xl">
+    <!-- Texto -->
+    <div class="border p-6 rounded-lg shadow-md flex flex-col justify-between">
+      <div>
+        <h2 class="text-xl md:text-2xl font-bold mb-2">TRANSPORTE PUERTA A PUERTA</h2>
+        <h3 class="text-lg md:text-xl mb-4">Conoce Colombia con nosotros</h3>
+        <p class="text-gray-700 mb-4">
+          Te llevamos seguro y cómodo para que descubras Colombia: sus atractivos,
+          gastronomía y cultura, con transporte puerta a puerta y conductores expertos
+          que te guiarán para vivir la magia de nuestro país.
+        </p>
+      </div>
+      <button class="bg-yellow-400 text-black px-4 py-2 rounded font-semibold hover:bg-yellow-500 transition">
+        Escríbenos
+      </button>
+    </div>
+
+    <!-- Imagen -->
+    <div class="bg-blue-100 flex items-center justify-center rounded-lg">
+      <img src={duster.src} alt="Imagen de destino" class="w-full h-auto object-cover rounded-lg" />
+    </div>
+  </div>
+</section>
+
+<!-- Para desktop -->
+<div class="hidden md:grid grid-cols-2 gap-6 w-full max-w-6xl">
+  <!-- Texto grande aquí -->
+</div>
+
+
+

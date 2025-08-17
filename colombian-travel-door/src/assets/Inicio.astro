@@ -1,0 +1,48 @@
+---
+import duster from '../assets/duster.jpg';
+---
+<section id="inicio" class="container mx-auto grid md:grid-cols-2 gap-6 px-4 py-10">
+  <!-- Versión Desktop -->
+  <div class="hidden md:flex flex-col justify-center items-center border p-6 shadow-md rounded-lg">
+    <h2 class="text-2xl md:text-3xl font-extrabold text-gray-900">
+      TRASLADO TURÍSTICO PUERTA A PUERTA
+    </h2>
+    <h3 class="mt-2 text-lg font-semibold text-gray-800">
+      Conoce Colombia con nosotros
+    </h3>
+    <p class="mt-3 text-gray-700">
+      Te llevamos seguro y cómodo para que descubras Colombia: sus atractivos, gastronomía y cultura, 
+      con transporte puerta a puerta y conductores expertos que te guiarán para vivir la magia de nuestro país.
+    </p>
+    <a target="_blank" href="#" class="  mt-5 bg-yellow-400 hover:bg-green-500 text-black font-semibold px-5 py-2 rounded-lg shadow-lg text-center w-50">
+      Escríbenos
+    </a>
+  </div>
+
+  <!-- Imagen Desktop -->
+  <div class="hidden md:flex justify-center items-center bg-blue-100 rounded-lg h-80 border-2  ">
+    <img src={duster.src} alt="Imagen de turismo" class="w-full h-full" />
+  </div>
+
+  <!-- Versión Mobile -->
+  <div class="relative md:hidden w-full h-[500px] bg-blue-100 rounded-lg flex items-center justify-center">
+    <!-- Imagen ocupa todo -->
+    <img src={duster.src} alt="Imagen de turismo" class="absolute inset-0 w-full h-full object-cover rounded-lg" />
+    <!-- Overlay oscuro para contraste -->
+    <!-- <div class="absolute inset-0 bg-black bg-opacity-40 rounded-lg"></div> -->
+    <!-- Contenido encima -->
+    <div class="relative z-10 text-center px-4">
+      <h1 class="text-2xl font-extrabold text-white mb-14">
+        TRASLADO TURÍSTICO
+      </h1>
+      <p class="mt-3 text-sm text-gray-200 m-8">
+        Con nosotros no te pierdes los lugares secretos que no salen en Google
+      </p>
+      <p class="mt-1 text-sm text-gray-200 m-15" >
+        No solo te llevamos, te guiamos para que vivas lo mejor de cada destino
+      </p>
+      <a target="_blank" href="#" class="mt-5 bg-yellow-400 hover:bg-green-500 text-black font-semibold px-7 py-2 rounded-lg shadow-lg " >
+        Escríbenos </a>
+    </div>
+  </div>
+</section>

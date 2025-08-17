@@ -1,44 +1,107 @@
+---
+import logo from '../assets/logo.jpg';
+---
 
-<header class="flex items-center justify-between px-6 py-4 bg-white shadow-md">
-  
-  <!-- Logo -->
-<div class="flex items-center">
-  <img src="/imagenes/logo.png" alt="Logo Viajeros por Colombia" class="h-12 w-auto">
+<header class="w-full shadow-md bg-white">
+  <nav class="container mx-auto flex justify-between items-center px-4 py-3 md:py-4">
+    <!-- Logo -->
+    <div class="flex items-center space-x-2">
+      <img src={logo.src} alt="Logo" class="w-8 h-8" />
+    <h1 class="font-extrabold text-xl bg-gradient-to-r from-yellow-400 via-blue-600 to-red-600 bg-clip-text text-transparent">
+  COLOMBIAN TRAVEL DOOR
+</h1>
+
+    </div>
+
+    <!-- Desktop Menu -->
+    <ul class="hidden md:flex space-x-6 font-semibold">
+      <li><a href="#inicio" class="hover:text-green-600">Inicio</a></li>
+      <li><a href="#nosotros" class="hover:text-green-600">Nosotros</a></li>
+      <li><a href="#lugares" class="hover:text-green-600">Lugares</a></li>
+      <li><a href="#tips" class="hover:text-green-600">Tips</a></li>
+    </ul>
+
+    <!-- Social Desktop -->
+<div class="hidden md:flex space-x-4 text-2xl">
+  <a target="_blank" href="#" 
+     class="transition-colors duration-300 hover:text-pink-500"
+     aria-label="TikTok">
+     <i class="fa-brands fa-tiktok"></i>
+  </a>
+  <a target="_blank" href="#"
+     class="transition-colors duration-300 hover:text-sky-500"
+     aria-label="Telegram">
+     <i class="fa-brands fa-telegram"></i>
+  </a>
+  <a target="_blank" href="#"
+     class="transition-colors duration-300 hover:text-green-500"
+     aria-label="WhatsApp">
+     <i class="fa-brands fa-whatsapp"></i>
+  </a>
+  <a target="_blank" href="#"
+     class="relative group" 
+     aria-label="Instagram">
+    <i class="fa-brands fa-instagram transition duration-300 group-hover:text-transparent 
+               group-hover:bg-gradient-to-tr group-hover:from-pink-500 
+               group-hover:via-purple-500 group-hover:to-yellow-400 
+               group-hover:bg-clip-text"></i>
+  </a>
 </div>
 
-  <!-- Navegación -->
-  <nav class="hidden md:flex space-x-6">
-    <a href="#lugares" class="text-blue-600 hover:text-blue-800 transition-colors duration-300 border border-blue-400 px-3 py-1 rounded hover:bg-blue-50">Lugares</a>
-    <a href="#nosotros" class="text-blue-600 hover:text-blue-800 transition-colors duration-300 border border-blue-400 px-3 py-1 rounded hover:bg-blue-50">Nosotros</a>
-    <a href="#servicios" class="text-blue-600 hover:text-blue-800 transition-colors duration-300 border border-blue-400 px-3 py-1 rounded hover:bg-blue-50">Servicios</a>
-    <a href="#tips" class="text-blue-600 hover:text-blue-800 transition-colors duration-300 border border-blue-400 px-3 py-1 rounded hover:bg-blue-50">Tips</a>
+
+    <!-- Mobile Button -->
+    <button 
+      id="menu-btn"
+      class="md:hidden focus:outline-none"
+      aria-label="Abrir menú"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
   </nav>
 
-  <!-- Redes Sociales -->
-  <div class="flex space-x-8 text-gray-700">
-    <!-- Telegram -->
-    <a href="https://t.me/tuusuario" target="_blank" class="hover:text-blue-500 transition-transform transform hover:scale-110">
-      <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-        <path d="M9.993 15.427l-.396 5.578c.567 0 .813-.244 1.106-.537l2.652-2.541 5.5 4.039c1.009.555 1.727.263 1.992-.933l3.611-16.917c.369-1.703-.616-2.37-1.713-1.957l-21.375 8.233c-1.639.637-1.61 1.553-.278 1.977l5.48 1.712 12.724-8.007c.599-.385 1.143-.172.696.214l-10.051 8.14z"/>
-      </svg>
-    </a>
-    <!-- WhatsApp -->
-    <a href="https://wa.me/tu-numero" target="_blank" class="hover:text-green-500 transition-transform transform hover:scale-110">
-      <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-        <path d="M20.52 3.48A11.89 11.89 0 0 0 12.02 0a11.89 11.89 0 0 0-8.5 3.48C1.04 5.96 0 8.88 0 11.99c0 2.1.56 4.14 1.61 5.94L0 24l6.22-1.62c1.74.95 3.7 1.44 5.8 1.44 3.11 0 6.03-1.04 8.5-3.48a11.89 11.89 0 0 0 3.48-8.5c0-3.11-1.04-6.03-3.48-8.5zM12.02 21.5c-1.73 0-3.43-.45-4.91-1.31l-.35-.2-3.69.96.99-3.61-.23-.38c-1.04-1.69-1.59-3.62-1.59-5.6 0-5.78 4.71-10.49 10.48-10.49 2.81 0 5.45 1.09 7.44 3.08a10.46 10.46 0 0 1 3.08 7.44c0 5.77-4.71 10.48-10.48 10.48z"/>
-      </svg>
-    </a>
-    <!-- Instagram -->
-    <a href="https://instagram.com/tuusuario" target="_blank" class="hover:text-pink-500 transition-transform transform hover:scale-110">
-      <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-        <path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 2 .2 2.7.4.7.3 1.3.6 1.9 1.1.6.6.9 1.2 1.1 1.9.2.7.3 1.5.4 2.7.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.2 2-.4 2.7-.3.7-.6 1.3-1.1 1.9-.6.6-1.2.9-1.9 1.1-.7.2-1.5.3-2.7.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-2-.2-2.7-.4-.7-.3-1.3-.6-1.9-1.1-.6-.6-.9-1.2-1.1-1.9-.2-.7-.3-1.5-.4-2.7C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.2-2 .4-2.7.3-.7.6-1.3 1.1-1.9.6-.6 1.2-.9 1.9-1.1.7-.2 1.5-.3 2.7-.4C8.4 2.2 8.8 2.2 12 2.2M12 0C8.7 0 8.3 0 7 .1 5.7.2 4.6.4 3.7.8 2.8 1.1 2 1.7 1.3 2.3.7 3 .1 3.8-.2 4.7c-.4.9-.6 2-.7 3.3C-1 8.3-1 8.7-1 12c0 3.3 0 3.7.1 5 .1 1.3.3 2.4.7 3.3.3.9.9 1.7 1.6 2.4.7.7 1.5 1.3 2.4 1.6.9.4 2 .6 3.3.7 1.3.1 1.7.1 5 .1 3.3 0 3.7 0 5-.1 1.3-.1 2.4-.3 3.3-.7.9-.3 1.7-.9 2.4-1.6.7-.7 1.3-1.5 1.6-2.4.4-.9.6-2 .7-3.3.1-1.3.1-1.7.1-5s0-3.7-.1-5c-.1-1.3-.3-2.4-.7-3.3-.3-.9-.9-1.7-1.6-2.4-.7-.7-1.5-1.3-2.4-1.6-.9-.4-2-.6-3.3-.7C15.7 0 15.3 0 12 0z"/>
-        <circle cx="12" cy="12" r="3.2"/>
-      </svg>
-    </a>
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden flex-col bg-white shadow-md md:hidden">
+    <a href="#inicio" class="px-4 py-2 border-b hover:bg-gray-100">Inicio</a>
+    <a href="#nosotros" class="px-4 py-2 border-b hover:bg-gray-100">Nosotros</a>
+    <a href="#lugares" class="px-4 py-2 border-b hover:bg-gray-100">Lugares</a>
+    <a href="#tips" class="px-4 py-2 border-b hover:bg-gray-100">Tips</a>
+    <div class="flex justify-center space-x-6 py-3 text-xl">
+      <a href="#" 
+     class="transition-colors duration-300 hover:text-pink-500"
+     aria-label="TikTok">
+     <i class="fa-brands fa-tiktok"></i>
+  </a>
+  <a href="#"
+     class="transition-colors duration-300 hover:text-sky-500"
+     aria-label="Telegram">
+     <i class="fa-brands fa-telegram"></i>
+  </a>
+  <a href="#"
+     class="transition-colors duration-300 hover:text-green-500"
+     aria-label="WhatsApp">
+     <i class="fa-brands fa-whatsapp"></i>
+  </a>
+  <a href="#"
+     class="relative group" 
+     aria-label="Instagram">
+    <i class="fa-brands fa-instagram transition duration-300 group-hover:text-transparent 
+               group-hover:bg-gradient-to-tr group-hover:from-pink-500 
+               group-hover:via-purple-500 group-hover:to-yellow-400 
+               group-hover:bg-clip-text"></i>
+  </a>
+    </div>
   </div>
 
-  <!-- Botón menú móvil -->
-  <button class="md:hidden text-3xl text-blue-600">
-    ☰
-  </button>
+  <!-- <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const btn = document.getElementById("menu-btn");
+      const menu = document.getElementById("mobile-menu");
+
+      btn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+      });
+    });
+  </script> -->
 </header>
