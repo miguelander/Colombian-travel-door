@@ -1,20 +1,24 @@
 ---
-import logo from '../assets/logo.jpg';
+import logo from '../assets/logot.png';
 ---
 
-<header class="w-full shadow-md bg-white">
+
+
+<header class=" flex items-center justify-between px-6 py-2 shadow-md bg-white relative">
+
+
+
   <nav class="container mx-auto flex justify-between items-center px-4 py-3 md:py-4">
     <!-- Logo -->
     <div class="flex items-center space-x-2">
-      <img src={logo.src} alt="Logo" class="w-8 h-8" />
-    <h1 class="font-extrabold text-xl bg-gradient-to-r from-yellow-400 via-blue-600 to-red-600 bg-clip-text text-transparent">
-  COLOMBIAN TRAVEL DOOR
-</h1>
-
+      <img src={logo.src} alt="Logo" class="w-15 h-15" />
+      <h1 class="font-extrabold text-3xl bg-[linear-gradient(to_right,#FFD700_0%,#FFD700_33%,#0057B8_33%,#0057B8_66%,#FF0000_66%,#FF0000_100%)] bg-clip-text text-transparent">
+        COLOMBIA TRAVEL DOOR
+      </h1>
     </div>
 
     <!-- Desktop Menu -->
-    <ul class="hidden md:flex space-x-6 font-semibold">
+    <ul class="hidden md:flex space-x-8 font-semibold">
       <li><a href="#inicio" class="hover:text-green-600">Inicio</a></li>
       <li><a href="#nosotros" class="hover:text-green-600">Nosotros</a></li>
       <li><a href="#lugares" class="hover:text-green-600">Lugares</a></li>
@@ -22,39 +26,17 @@ import logo from '../assets/logo.jpg';
     </ul>
 
     <!-- Social Desktop -->
-<div class="hidden md:flex space-x-4 text-2xl">
-  <a target="_blank" href="#" 
-     class="transition-colors duration-300 hover:text-pink-500"
-     aria-label="TikTok">
-     <i class="fa-brands fa-tiktok"></i>
-  </a>
-  <a target="_blank" href="#"
-     class="transition-colors duration-300 hover:text-sky-500"
-     aria-label="Telegram">
-     <i class="fa-brands fa-telegram"></i>
-  </a>
-  <a target="_blank" href="#"
-     class="transition-colors duration-300 hover:text-green-500"
-     aria-label="WhatsApp">
-     <i class="fa-brands fa-whatsapp"></i>
-  </a>
-  <a target="_blank" href="#"
-     class="relative group" 
-     aria-label="Instagram">
-    <i class="fa-brands fa-instagram transition duration-300 group-hover:text-transparent 
-               group-hover:bg-gradient-to-tr group-hover:from-pink-500 
-               group-hover:via-purple-500 group-hover:to-yellow-400 
-               group-hover:bg-clip-text"></i>
-  </a>
-</div>
-
+    <div class="hidden md:flex space-x-4 text-3xl">
+      <a target="_blank" href="https://www.tiktok.com/@colombiantraveldoor?lang=es" class="transition-colors duration-300 hover:text-pink-500" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+      <a target="_blank" href="https://www.instagram.com/colombiantraveldoor/" class="relative group" aria-label="Instagram">
+        <i class="fa-brands fa-instagram transition duration-300 group-hover:text-transparent group-hover:bg-gradient-to-tr group-hover:from-pink-500 group-hover:via-purple-500 group-hover:to-yellow-400 group-hover:bg-clip-text"></i>
+      </a>
+      <a target="_blank" href="#" class="transition-colors duration-300 hover:text-sky-500" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
+      <a target="_blank" href="#" class="transition-colors duration-300 hover:text-green-500" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+    </div>
 
     <!-- Mobile Button -->
-    <button 
-      id="menu-btn"
-      class="md:hidden focus:outline-none"
-      aria-label="Abrir menú"
-    >
+    <button id="btn" class=" md:hidden focus:outline-none" aria-label="Abrir menú">
       <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
       </svg>
@@ -62,46 +44,25 @@ import logo from '../assets/logo.jpg';
   </nav>
 
   <!-- Mobile Menu -->
-  <div id="mobile-menu" class="hidden flex-col bg-white shadow-md md:hidden">
+<div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-white shadow-md flex flex-col items-center z-50">
     <a href="#inicio" class="px-4 py-2 border-b hover:bg-gray-100">Inicio</a>
     <a href="#nosotros" class="px-4 py-2 border-b hover:bg-gray-100">Nosotros</a>
     <a href="#lugares" class="px-4 py-2 border-b hover:bg-gray-100">Lugares</a>
     <a href="#tips" class="px-4 py-2 border-b hover:bg-gray-100">Tips</a>
     <div class="flex justify-center space-x-6 py-3 text-xl">
-      <a href="#" 
-     class="transition-colors duration-300 hover:text-pink-500"
-     aria-label="TikTok">
-     <i class="fa-brands fa-tiktok"></i>
-  </a>
-  <a href="#"
-     class="transition-colors duration-300 hover:text-sky-500"
-     aria-label="Telegram">
-     <i class="fa-brands fa-telegram"></i>
-  </a>
-  <a href="#"
-     class="transition-colors duration-300 hover:text-green-500"
-     aria-label="WhatsApp">
-     <i class="fa-brands fa-whatsapp"></i>
-  </a>
-  <a href="#"
-     class="relative group" 
-     aria-label="Instagram">
-    <i class="fa-brands fa-instagram transition duration-300 group-hover:text-transparent 
-               group-hover:bg-gradient-to-tr group-hover:from-pink-500 
-               group-hover:via-purple-500 group-hover:to-yellow-400 
-               group-hover:bg-clip-text"></i>
-  </a>
+      <a href="#" class="hover:text-pink-500"><i class="fa-brands fa-tiktok"></i></a>
+      <a href="#" class="hover:text-sky-500"><i class="fa-brands fa-telegram"></i></a>
+      <a href="#" class="hover:text-green-500"><i class="fa-brands fa-whatsapp"></i></a>
+      <a href="#" class="hover:text-purple-500"><i class="fa-brands fa-instagram"></i></a>
     </div>
   </div>
-
-  <!-- <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const btn = document.getElementById("menu-btn");
-      const menu = document.getElementById("mobile-menu");
-
-      btn.addEventListener("click", () => {
-        menu.classList.toggle("hidden");
-      });
-    });
-  </script> -->
 </header>
+
+<script>
+  const btn = document.getElementById("btn");
+  const menu = document.getElementById("mobile-menu");
+
+  btn.addEventListener("click", () => {
+    menu.classList.toggle("hidden");
+  });
+</script>

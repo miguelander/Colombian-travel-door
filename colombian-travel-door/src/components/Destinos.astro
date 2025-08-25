@@ -1,0 +1,209 @@
+---
+import monserrate from '../assets/monserrate.jpg';
+import jaimeduque from '../assets/parquejaimeDuque.jpg';
+import lagunaGuatavita from '../assets/lagunaGuatavita.jpg';
+import zipaquira from '../assets/zipaquiraCatedral.jpg';
+import villaDeLeiva from '../assets/villadeleyva.jpg';
+import haciendaColoma from '../assets/haciendacoloma.jpg';
+
+---
+
+<section id="lugares" class="px-6 py-12 bg-gray-50">
+  <div class="text-center mb-10">
+    <h2 class="text-2xl md:text-3xl font-bold text-gray-900">
+      Destinos que no pueden faltar
+    </h2>
+    <p class="text-xl mt-2 text-gray-600 max-w-2xl mx-auto p-5">
+      Descubre los lugares más icónicos de Colombia que harán de tu viaje una experiencia inolvidable.
+    </p>
+  </div>
+
+  <!-- Contenedor responsive -->
+  <div 
+    class="flex gap-6 overflow-x-auto snap-x md:grid md:grid-cols-3 md:gap-8"
+    role="list"
+    aria-label="Destinos turísticos destacados"
+  >
+    <!-- Tarjeta nueva optimizada -->
+    <article 
+      class="group relative block min-w-[85%] md:min-w-0 md:max-w-[360px] mx-auto rounded-xl overflow-hidden shadow-lg snap-center"
+      role="listitem"
+    >
+      <img
+        src={monserrate.src}
+        alt="Vista panorámica del Cerro de Monserrate en Bogotá"
+        class="absolute inset-0 h-full w-full object-cover opacity-80 transition-opacity group-hover:opacity-60"
+        loading="lazy"
+      />
+
+      <div class="relative p-6 md:p-8 bg-gradient-to-t from-black/80 via-black/40 to-transparent h-full flex flex-col justify-start">
+        <p class="text-xs font-semibold tracking-widest text-yellow-400 uppercase">
+          Tour centro de Bogotá
+        </p>
+        <h3 class="text-xl md:text-2xl font-bold text-white">
+          Cerro de Monserrate
+        </h3>
+
+        <div class="mt-4 transform translate-y-6 opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
+          <p class="text-sm text-gray-100 leading-relaxed">
+            Vive la experiencia de subir al icónico Cerro de Monserrate, un lugar lleno de historia, cultura y la mejor vista de Bogotá. Además, recorre el corazón histórico de la ciudad: conoce la Plaza de Bolívar, el Palacio de Justicia, la Casa de Nariño y descubre museos y rincones llenos de tradición que cuentan la historia de Colombia
+          </p>
+        </div>
+      </div>
+    </article>
+
+    <article 
+      class="group relative block min-w-[85%] md:min-w-0 md:max-w-[360px] mx-auto rounded-xl overflow-hidden shadow-lg snap-center"
+      role="listitem"
+    >
+      <img
+        src={jaimeduque.src}
+        alt="Parque Jaime Duque con atracciones y naturaleza"
+        class="absolute inset-0 h-full w-full object-cover opacity-80 transition-opacity group-hover:opacity-60"
+        loading="lazy"
+      />
+
+      <div class="relative p-6 md:p-8 bg-gradient-to-t from-black/80 via-black/40 to-transparent h-full flex flex-col justify-start">
+        <p class="text-xs font-semibold tracking-widest text-yellow-400 uppercase">
+          cultura y diversión
+        </p>
+        <h3 class="text-xl md:text-2xl font-bold text-white">
+          Parque Jaime Duque
+        </h3>
+
+        <div class="mt-4 transform translate-y-6 opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
+          <p class="text-sm text-gray-100 leading-relaxed">
+            Vive la magia del Parque Jaime Duque: atracciones, cultura, naturaleza y diversión en un solo lugar cerca de Bogotá
+            
+          </p>
+        </div>
+      </div>
+    </article>
+
+    <article 
+      class="group relative block min-w-[85%] md:min-w-0 md:max-w-[360px] mx-auto rounded-xl overflow-hidden shadow-lg snap-center"
+      role="listitem"
+    >
+      <img
+        src={zipaquira.src}
+        alt="catedral de sal de zipaquira"
+        class="absolute inset-0 h-full w-full object-cover opacity-80 transition-opacity group-hover:opacity-60"
+        loading="lazy"
+      />
+
+      <div class="relative p-6 md:p-8 bg-gradient-to-t from-black/80 via-black/40 to-transparent h-full flex flex-col justify-start">
+        <p class="text-xs font-semibold tracking-widest text-yellow-400 uppercase">
+          historia y cultura
+        </p>
+        <h3 class="text-xl md:text-2xl font-bold text-white">
+          Catedral de Sal de Zipaquirá
+        </h3>
+
+        <div class="mt-4 transform translate-y-6 opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
+          <p class="text-sm text-gray-100 leading-relaxed">
+            Descubre la majestuosa Catedral de Sal, una obra arquitectónica única en el mundo, ubicada en el corazón de una mina subterránea. Vive una experiencia espiritual y cultural en uno de los tesoros más impresionantes de Colombia.
+            
+          </p>
+        </div>
+      </div>
+    </article>
+
+    <article 
+      class="group relative block min-w-[85%] md:min-w-0 md:max-w-[360px] mx-auto rounded-xl overflow-hidden shadow-lg snap-center"
+      role="listitem"
+    >
+      <img
+        src={lagunaGuatavita.src}
+        alt="laguna de guatavita"
+        class="absolute inset-0 h-full w-full object-cover opacity-80 transition-opacity group-hover:opacity-60"
+        loading="lazy"
+      />
+
+      <div class="relative p-6 md:p-8 bg-gradient-to-t from-black/80 via-black/40 to-transparent h-full flex flex-col justify-start">
+        <p class="text-xs font-semibold tracking-widest text-yellow-400 uppercase">
+          historia y cultura
+        </p>
+        <h3 class="text-xl md:text-2xl font-bold text-white">
+          Catedral de Sal de Zipaquirá
+        </h3>
+
+        <div class="mt-4 transform translate-y-6 opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
+          <p class="text-sm text-gray-100 leading-relaxed">
+           Sumérgete en la leyenda del Dorado en la Laguna de Guatavita, un lugar sagrado rodeado de naturaleza y misterio que te conectará con la historia ancestral.
+          </p>
+        </div>
+      </div>
+    </article>
+
+    <article 
+      class="group relative block min-w-[85%] md:min-w-0 md:max-w-[360px] mx-auto rounded-xl overflow-hidden shadow-lg snap-center"
+      role="listitem"
+    >
+      <img
+        src={villaDeLeiva.src}
+        alt="centro historico de villa de leyva"
+        class="absolute inset-0 h-full w-full object-cover opacity-80 transition-opacity group-hover:opacity-60"
+        loading="lazy"
+      />
+
+      <div class="relative p-6 md:p-8 bg-gradient-to-t from-black/80 via-black/40 to-transparent h-full flex flex-col justify-start">
+        <p class="text-xs font-semibold tracking-widest text-yellow-400 uppercase">
+          historia y aventura
+        </p>
+        <h3 class="text-xl md:text-2xl font-bold text-white">
+          Villa de Leyva
+        </h3>
+
+        <div class="mt-4 transform translate-y-6 opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
+          <p class="text-sm text-gray-100 leading-relaxed">
+           Viaja en el tiempo recorriendo las calles empedradas de Villa de Leyva, uno de los pueblos más bellos de Colombia. Disfruta de su arquitectura colonial, historia, festivales y un ambiente único que enamora a cada visitante.
+          </p>
+        </div>
+      </div>
+    </article>
+
+
+    <article 
+      class="group relative block min-w-[85%] md:min-w-0 md:max-w-[360px] mx-auto rounded-xl overflow-hidden shadow-lg snap-center"
+      role="listitem"
+    >
+      <img
+        src={haciendaColoma.src}
+        alt="Hacienda Coloma fusagasuga"
+        class="absolute inset-0 h-full w-full object-cover opacity-80 transition-opacity group-hover:opacity-60"
+        loading="lazy"
+      />
+
+      <div class="relative p-6 md:p-8 bg-gradient-to-t from-black/80 via-black/40 to-transparent h-full flex flex-col justify-start">
+        <p class="text-xs font-semibold tracking-widest text-yellow-400 uppercase">
+          historia y aventura
+        </p>
+        <h3 class="text-xl md:text-2xl font-bold text-white">
+          Hacienda santa coloma
+        </h3>
+
+        <div class="mt-4 transform translate-y-6 opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
+          <p class="text-sm text-gray-100 leading-relaxed">
+           Descubre la historia viva de la Hacienda Santa Coloma, una joya colonial rodeada de paisajes únicos. Conoce su arquitectura, tradiciones y la magia de un lugar que conserva el encanto del pasado.
+          </p>
+        </div>
+      </div>
+    </article>
+    
+    
+   
+   
+  </div>
+
+  <!-- Botón ver más -->
+<div class="flex justify-center mt-10">
+  <a href="/tours" 
+     class="bg-gradient-to-r from-yellow-400 via-blue-600 to-red-500 
+            text-white font-semibold text-lg px-10 py-4 
+            rounded-xl shadow-lg transition-all duration-300 hover:scale-110"
+     aria-label="Ver más tours disponibles en Colombia">
+    Ver más
+  </a>
+</div>
+
+</section>

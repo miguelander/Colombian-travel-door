@@ -1,0 +1,79 @@
+---
+---
+
+<section id="nosotros" class="container mx-auto px-6 py-10">
+  <!-- Versión Desktop -->
+  <div class="hidden md:grid grid-cols-2 gap-8 items-center">
+    <!-- Texto -->
+    <div>
+      <h2 class="text-3xl font-extrabold text-gray-900 mb-4">QUIENES SOMOS ?</h2>
+      <p class="text-gray-700 leading-relaxed text-xl">
+        Somos más que un servicio de transporte: somos tu aliado para vivir Colombia. Ofrecemos traslados puerta a puerta con comodidad y seguridad, pero también asesoría personalizada para que elijas los mejores destinos. Nuestros conductores no solo manejan, también son conocedores de la historia y cultura, compartiendo datos y relatos que harán de tu viaje una experiencia única.
+      </p>
+    </div>
+
+    <!-- Video -->
+    <div class="flex justify-center">
+      <video
+        class="rounded-lg shadow-lg w-full max-w-md"
+        controls
+        poster="/video-poster.jpg"
+      >
+        <source src="/video.mp4" type="video/mp4" />
+        Tu navegador no soporta el video.
+      </video>
+    </div>
+  </div>
+
+  <!-- Versión Mobile -->
+  <div class="md:hidden text-center">
+    <h2 class="text-2xl font-extrabold text-gray-900 mb-4">NOSOTROS</h2>
+    <p class="text-gray-700 leading-relaxed mb-4">
+      Somos más que un servicio de transporte: somos tu aliado para vivir Colombia. Ofrecemos traslados puerta a puerta con comodidad y seguridad, pero también asesoría personalizada para que elijas los mejores destinos. Nuestros conductores no solo manejan, también son conocedores de la historia y cultura, compartiendo datos y relatos que harán de tu viaje una experiencia única.
+    </p>
+
+    <!-- Botón para desplegar video -->
+    <button
+      id="toggleVideo"
+      class="flex items-center justify-center mx-auto mt-4 p-2 bg-gray-100 rounded-full shadow-md transition-transform"
+    >
+      <!-- Icono flecha -->
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        id="arrowIcon"
+        class="h-6 w-6 text-gray-700 transition-transform duration-300"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M19 9l-7 7-7-7" />
+      </svg>
+    </button>
+
+    <!-- Contenedor oculto del video -->
+    <div id="mobileVideo" class="hidden mt-4">
+      <video
+        class="rounded-lg shadow-lg w-full"
+        controls
+        poster="/video-poster.jpg"
+      >
+        <source src="/video.mp4" type="video/mp4" />
+        Tu navegador no soporta el video.
+      </video>
+    </div>
+  </div>
+</section>
+
+<!-- Script nativo
+<script>
+  const toggleBtn = document.getElementById("toggleVideo");
+  const videoBox = document.getElementById("mobileVideo");
+  const arrowIcon = document.getElementById("arrowIcon");
+
+  toggleBtn?.addEventListener("click", () => {
+    videoBox.classList.toggle("hidden");
+    // Rotamos la flecha
+    arrowIcon.classList.toggle("rotate-180");
+  });
+</script> -->
