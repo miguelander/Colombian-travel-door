@@ -1,5 +1,5 @@
 ---
-import logo from '../assets/logot.png';
+import LOGO from '../assets/LOGO.png';
 ---
 
 
@@ -11,14 +11,14 @@ import logo from '../assets/logot.png';
   <nav class="container mx-auto flex justify-between items-center px-4 py-3 md:py-4">
     <!-- Logo -->
     <div class="flex items-center space-x-2">
-      <img src={logo.src} alt="Logo" class="w-15 h-15" />
+      <img src={LOGO.src} alt="Logo" class="w-25 h-25" />
       <h1 class="font-extrabold text-3xl bg-[linear-gradient(to_right,#FFD700_0%,#FFD700_33%,#0057B8_33%,#0057B8_66%,#FF0000_66%,#FF0000_100%)] bg-clip-text text-transparent">
         COLOMBIA TRAVEL DOOR
       </h1>
     </div>
 
     <!-- Desktop Menu -->
-    <ul class="hidden md:flex space-x-8 font-semibold">
+    <ul class="hidden md:flex space-x-10 font-semibold text-transform uppercase">
       <li><a href="#inicio" class="hover:text-green-600">Inicio</a></li>
       <li><a href="#nosotros" class="hover:text-green-600">Nosotros</a></li>
       <li><a href="#lugares" class="hover:text-green-600">Lugares</a></li>
@@ -26,13 +26,13 @@ import logo from '../assets/logot.png';
     </ul>
 
     <!-- Social Desktop -->
-    <div class="hidden md:flex space-x-4 text-3xl">
-      <a target="_blank" href="https://www.tiktok.com/@colombiantraveldoor?lang=es" class="transition-colors duration-300 hover:text-pink-500" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
-      <a target="_blank" href="https://www.instagram.com/colombiantraveldoor/" class="relative group" aria-label="Instagram">
+    <div class="hidden md:flex space-x-4 text-4xl">
+      <a target="_blank" href="https://www.tiktok.com/@colombiantraveldoor?lang=es" class="transition-colors duration-300 hover:text-pink-500 mr-5" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+      <a target="_blank" href="https://www.instagram.com/colombiantraveldoor/" class="relative group mr-5" aria-label="Instagram">
         <i class="fa-brands fa-instagram transition duration-300 group-hover:text-transparent group-hover:bg-gradient-to-tr group-hover:from-pink-500 group-hover:via-purple-500 group-hover:to-yellow-400 group-hover:bg-clip-text"></i>
       </a>
-      <a target="_blank" href="#" class="transition-colors duration-300 hover:text-sky-500" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
-      <a target="_blank" href="#" class="transition-colors duration-300 hover:text-green-500" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+      <a target="_blank" href="#" class="transition-colors duration-300 hover:text-sky-500 mr-5" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
+      <a target="_blank" href="#" class="transition-colors duration-300 hover:text-green-500 mr-5" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
     </div>
 
     <!-- Mobile Button -->
